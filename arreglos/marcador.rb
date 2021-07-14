@@ -1,5 +1,5 @@
 # Datos de entrada
-puts "Ingrese un marcador:"
+puts "Ingrese un marcador (Marcador local/Marcador visitante):"
 marcador = gets # Cadena de texto o caracteres
 
 marcador_local = marcador. split("-")[0].to_i
@@ -17,4 +17,5 @@ elsif marcador_local < marcador_visitante
 elsif marcador_local == marcador_visitante
     mensaje3 = "Empate"
     puts mensaje3
+end
 

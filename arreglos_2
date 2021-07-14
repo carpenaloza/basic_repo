@@ -35,23 +35,10 @@ while vueltas >= 0
         puts "La suma total es #{suma} de la lista de los números"
         puts "La suma total es " + suma.to_s + " de la lista de los números"
         puts 'La suma total es #{suma} de la lista de los números'
-
     elsif opcion == "resta"
-        
+        # restar todos los números
     elsif opcion == "pares"
-
-        # si hay numeros pares sumar
-        for i in 0..arreglo_numeros.length
-            if (i%2==0) suma += arreglo_numeros[i]
-            return suma.to_i
-        end
-        # si no, finalizar
-        puts "La suma total es #{suma} de la lista de los números"
-        puts "La suma total es " + suma.to_s + " de la lista de los números"
-        puts 'La suma total es #{suma} de la lista de los números'
-
-    
-
+        # contar los números pares
     elsif opcion == "impares"
         # contar los números impares
     elsif opcion == "mayor"

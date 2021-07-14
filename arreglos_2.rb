@@ -21,7 +21,7 @@ while vueltas >= 0
 
     puts "Escribir una de las siguientes opciones: suma, resta, pares, impares, mayor, menor"
     opcion = gets.chomp
-    vueltas -= 1
+    vueltas -= 5
     
     arreglo_numeros = numeros.split(",")
 

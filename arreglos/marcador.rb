@@ -2,7 +2,7 @@
 puts "Ingrese un marcador:"
 marcador = gets # Cadena de texto o caracteres
 
-marcador_local = marcado. split("-")[0].to_i
+marcador_local = marcador. split("-")[0].to_i
 marcador_visitante = marcador.split("-")[1].to_i
 
 #resultado = marcador_local + marcador_visitante
@@ -17,10 +17,4 @@ elsif marcador_local < marcador_visitante
 elsif marcador_local == marcador_visitante
     mensaje3 = "Empate"
     puts mensaje3
-
-#puts texto_prueba.split(".6.")
-
-#Datos de salida
-
-
 

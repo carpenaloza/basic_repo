@@ -14,15 +14,16 @@ while(intentos <= 5)do
   
   if numero > secreto
   intentos = intentos + 1
-  puts "tienes que intentarlo otra vez te daré una pista, tu número es mayor que el secreto"
+  puts "tienes que intentarlo otra vez te daré una pista, tu número es más alto que el secreto"
  
   elsif numero < secreto
   intentos = intentos + 1
-  puts "tienes que intentarlo otra vez te daré una pista tu numero es menor que el secreto"
+  puts "tienes que intentarlo otra vez te daré una pista tu numero es más bajo que el secreto"
 
   else 
   puts "muy bien #{nombre} no me esperaba que lo consiguieras"
   puts "y en solo #{intentos} intentos"
+  break if i == 2
   
 
 end

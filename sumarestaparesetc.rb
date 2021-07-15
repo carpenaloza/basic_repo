@@ -37,27 +37,23 @@ while vueltas >= 0
         puts 'La suma total es #{suma} de la lista de los números'
 
     elsif opcion == "resta"
-        for i in 0..arreglo_numeros.length
-            suma += arreglo_numeros[i].to_i
-        end
-        # puts arreglo_numeros[0].to_i + arreglo_numeros[1].to_i + arreglo_numeros[2].to_i
-        puts "La suma total es #{suma} de la lista de los números"
-        puts "La suma total es " + suma.to_s + " de la lista de los números"
-        puts 'La suma total es #{suma} de la lista de los números'
+        
         
     elsif opcion == "pares"
 
         # si hay numeros pares sumar
-        for i in 0..arreglo_numeros.length
-            if (i % 2 ==0) 
-                suma += [i]
-            return suma.to_i
+        while i != 0
+            if i % 2 == 0
+                pares = pares + 1
+            
+            end
+            puts "Cantidad de numeros pares: #{pares} "
+            i = Integer(gets.chomp)
         end
-        # si no, finalizar
-        puts "La suma total es #{suma} de la lista de los números"
-        puts "La suma total es " + suma.to_s + " de la lista de los números"
-        puts 'La suma total es #{suma} de la lista de los números'
+        puts "Cantidad de numeros pares: #{pares} "
 
+        # si no, finalizar
+        
     
 
     elsif opcion == "impares"

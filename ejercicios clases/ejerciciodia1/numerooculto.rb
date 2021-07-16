@@ -5,7 +5,7 @@ nombre = gets.chomp
  
 intentos = 1
  
-puts "Hola! Vamos a entretenérnos!! Tengo un numero del 0 al 20, tendrás 5 oportunidades hasta adivinar el número secreto, aprovéchalas"
+puts "Hola #{nombre}! Vamos a entretenérnos!! Tengo un numero del 0 al 20, tendrás 5 oportunidades hasta adivinar el número secreto, aprovéchalas"
  
 while(intentos <= 5)do
 
@@ -23,7 +23,7 @@ while(intentos <= 5)do
   else 
   puts "muy bien #{nombre} no me esperaba que lo consiguieras"
   puts "y en solo #{intentos} intentos"
-  break if i == 2
+  break if i == 1
   
 
 end

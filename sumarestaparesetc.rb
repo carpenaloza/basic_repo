@@ -37,32 +37,71 @@ while vueltas >= 0
         puts 'La suma total es #{suma} de la lista de los números'
 
     elsif opcion == "resta"
+
+        for i in 0..arreglo_numeros.length
+            suma += arreglo_numeros[i].to_i
+            if i % 2 == 0
+
+                suma += i
+                #numero par
+    
+            end
+        end
+        puts "La suma total es #{resta} de la lista de los números"
         
         
     elsif opcion == "pares"
 
-        # si hay numeros pares sumar
-        while i != 0
-            if i % 2 == 0
-                pares = pares + 1
-            
+        convertidos_a_numeros = arreglo_numeros.map { |n| n.to_i } 
+            for n in convertidos_a_numeros
+
+                if n % 2 == 0
+
+                    pares = pares + 1
+                    #numero par
+        
+                end
+                
             end
-            puts "Cantidad de numeros pares: #{pares} "
-            i = Integer(gets.chomp)
-        end
-        puts "Cantidad de numeros pares: #{pares} "
+            puts "La suma total de pares es #{pares} de la lista de los números"
+            puts "La suma total es " + pares.to_s + " de la lista de los números"
+        
+
+        # si hay numeros pares sumar
+        #while i != 0
+           # if i % 2 == 0
+             #   pares = pares + 1
+            
+            #end
+            #puts "Cantidad de numeros pares: #{pares} "
+            #i = Integer(gets.chomp)
+        #end
+        #puts "Cantidad de numeros pares: #{pares} "
 
         # si no, finalizar
         
     
 
     elsif opcion == "impares"
-        # contar los números impares
+        convertidos_a_numeros = arreglo_numeros.map { |n| n.to_i } 
+            for n in convertidos_a_numeros
+
+                if n % 2 != 0
+
+                    impares = impares + 1
+                    #numero par
+            
+                end
+            end
+            puts "La suma total de pares es #{impares} de la lista de los números"
+            # contar los números impares
     elsif opcion == "mayor"
-        # encontrar el número mayor
+        
+        
+
     elsif opcion == "menor"
         # encontrar el número menor
-    else
+    
         # mostrar mensaje de error
     end
 

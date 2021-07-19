@@ -1,37 +1,23 @@
-puts "introduce tu nombre"
-nombre = gets.chomp
-opcion = "" # aquí vamos a guardar lo que el usuario escriba
-ventas = "" # aquí vamos a guardar lo que el usuario escriba
+ventas = []
+valor = 0
+suma= 0
 
-puts "Hola #{nombre}! yo seré tu asistente el día de hoy, ingresa tus ventas conmigo, te guiaré en todo el proceso!"
+puts "Este programa calculará automaticamente el total de tus ventas diarias \ny el promedio por ventas."
+puts "Ingresa tus ventas, para terminar escribe \"-1\""
 
-# salida
-ingreso = 0
-total = 0
-promedio = 0
-
-
-vueltas = 10
-while vueltas >= 0 do
-    
-    puts "Escribir una de las siguientes opciones de ventas: ingreso, total, promedio, finalizar para salir"
-    opcion = gets.chomp
-    
-    
-        if opcion == "ingreso" 
-            while vueltas = 10 do
-            puts "Deseas ingresar una venta, recuerda que para salir puedes escribir finalizar"
-            ventas = gets.chomp
-            opción = "ventas"
-            puts "El monto ingresado es #{ventas}"
-            break if opcion == "finalizar"
-            end
+while valor != "-1"
+    valor = gets.chomp
+        if valor != "-1"
             
-            #ventas = gets.chomp.to_i
-
+            ventas.push(valor.to_i)
             
-        elsif opcion == "finalizar"
-            break if i == 1
-        end
+        end 
+        
+        
     
 end
+suma = ventas.sum
+promedio = suma/ventas.length
+
+    puts "El total de ventas del día es #{suma}"
+puts "El promedio de tus ventas del día fue de #{promedio}"

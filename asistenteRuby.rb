@@ -26,7 +26,7 @@
 # PI = 3.1416  
 # puts PI"]
 
-class MenuSubmenuConsola
+class MenuConsola
     
     def main()
         
@@ -91,5 +91,5 @@ class MenuSubmenuConsola
     end
 end
 
-obj = MenuSubmenuConsola.new
+obj = MenuConsola.new
 obj.main()

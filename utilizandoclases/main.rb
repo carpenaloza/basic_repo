@@ -10,8 +10,7 @@ lista_de_cliente = []
 for i in 0..50
     cliente = Cliente.new
     cliente.nombre = Faker::Name.name
-    cliente.correo = Faker::Internet.email(
-        name: cliente.nombre)
+    cliente.correo = Faker::Internet.email(name: cliente.nombre)
     cliente.mostrar_datos
     
     lista_de_cliente << cliente

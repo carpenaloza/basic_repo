@@ -1,9 +1,10 @@
 # # Nos sirve para enlazar 
 require 'faker' # Trae las gemas
+require_relative 'cliente'
 require_relative 'mascota'
 require_relative 'gato'
 require_relative 'perro'
-require_relative 'cliente'
+
 
 #Utilizando un For crear una lista con 50 o 100 clientes falsos
 #con su nombre y su correo
@@ -22,24 +23,23 @@ require_relative 'cliente'
 # end
 
 lista_de_cliente = []
+lista_gatos = []
+lista_perros = []
+lista_mascotas = []
 
 for i in 0..50
     cliente = Cliente.new
-    cliente.nombre = Faker::Name.name
-    cliente.correo = Faker::Internet.email(
-        name: cliente.nombre)
-
+    cliente.nombre_cliente = Faker::Name.name_with_middle
+    cliente.fecha = Faker::Date.in_date_period
+    cliente.rut = Faker::ChileRut.full_rut
+    cliente.domicilio = Faker::Address.full_address
+    
     # cliente.mascota = Mascota.new
     # cliente.mascota.nombre = Faker::Name.name
     
     lista_de_cliente << cliente
 end
 
-# # cliente1 = Cliente.new
-# # cliente1.nombre = Faker::Name.name
-
-lista_gatos = []
-lista_perros = []
 
 for i in 0..50
     perro_nuevo = Perro.new
@@ -48,18 +48,39 @@ for i in 0..50
     perro_nuevo.edad = Faker::Creature::Dog.age
     perro_nuevo.raza = Faker::Creature::Dog.breed
     perro_nuevo.mostrar_datos
+    perro_nuevo.ladrar
 
     lista_perros << perro_nuevo
+    lista_mascotas << lista_perros
 end
-
 
 for i in 0..50
-    lista_de_cliente[i].mascota = lista_perros[i]
+    gato_nuevo = Gato.new
+    gato_nuevo.nombre = Faker::Creature::Cat.name
+    gato_nuevo.size = Faker::Creature::Dog.coat_length
+    gato_nuevo.edad = Faker::Creature::Dog.age
+    gato_nuevo.raza = Faker::Creature::Cat.breed
+    gato_nuevo.mostrar_datos
+    gato_nuevo.maullar
+
+    lista_gatos << gato_nuevo
+    lista_mascotas << lista_gatos
 end
 
-for cliente in lista_de_cliente
-    cliente.mostrar_mascotas
-end
+
+
+
+# for i in 0..50
+#     lista_de_cliente[i].mascota = lista_perros[i] + lista_gatos[i]
+# end
+
+# for i in 0..50
+#     lista_de_cliente[i].mascota = lista_mascotas[i]
+# end
+
+# for cliente in lista_de_cliente
+#     cliente.mostrar_mascotas
+# end
 
 
 File.write("Clientes.txt", lista_de_clientes)

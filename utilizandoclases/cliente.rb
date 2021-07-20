@@ -3,6 +3,7 @@
 class Cliente
     # Datos - Variables - Atributos
     @nombre
+    @correo
 
     attr_accessor :correo
     attr_reader :ciudad
@@ -11,8 +12,14 @@ class Cliente
     def nombre= (valor_del_nombre)
         @nombre = valor_del_nombre
     end
+    def nombre= (valor_del_nombre)
+        @nombre = valor_del_nombre
+    end
 
     # Métodos devolución
+    def nombre
+        return @nombre
+    end
     def nombre
         return @nombre
     end

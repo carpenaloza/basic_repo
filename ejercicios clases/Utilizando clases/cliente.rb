@@ -18,6 +18,17 @@ class Cliente
     end
 
     def mostrar_info
-        puts "Mi nombre de cliente es #{@nombre}, mi correo es #{@correo} y he comprado #{@cantidad_compras} veces"
+        puts "Mi nombre de cliente es #{@nombre}, 
+        mi correo es #{@correo} 
+        y he comprado #{@cantidad_compras} veces"
+    end
+
+    def mostrar_datos
+        puts "Mi nombre de cliente es #{@nombre},
+        mi correo es #{@correo}"
+    end
+
+    def mostrar_mascotas
+        puts "#{@nombre} #{@mascota}"
     end
 end

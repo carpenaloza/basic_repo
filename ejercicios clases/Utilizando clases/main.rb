@@ -5,14 +5,20 @@ require_relative 'cliente'
 #Utilizando un For crear una lista con 50 o 100 clientes falsos
 #con su nombre y su correo
 #Utilizando un método, mostrar la información del cliente
+lista_de_cliente = []
+
 for i in 0..50
     cliente = Cliente.new
     cliente.nombre = Faker::Name.name
-    cliente.correo = Faker::Internet.email(name: cliente.nombre)
-    puts cliente.inspect
+    cliente.correo = Faker::Internet.email(
+        name: cliente.nombre)
+    cliente.mostrar_datos
+    
+    lista_de_cliente << cliente
 end
 
 
+File.write("clientes.txt", lista_de_cliente)
 
 
 

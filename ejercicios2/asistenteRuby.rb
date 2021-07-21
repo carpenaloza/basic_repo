@@ -52,7 +52,11 @@ class MenuConsola
 
             when 3
                 print "\nHaz ingresado a uso de + - / * con array de números (array)"
-                print "lallalala"
+                print '    puts arreglo[0] + \"_ _ _ _ _ _ _\" + arreglo[8]
+                puts \"pon una letra\"
+                letra = gets.chomp.to_i
+                puts "monocromo".tr("aeiouaeio", "_")
+                puts arreglo[].tr('aeiouaeio', "_")'
 
             when 4
                 print "\nHaz ingresado a uso de + - / * con array de cadenas (array)\n"

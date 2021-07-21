@@ -9,6 +9,7 @@
 #     #     puts "#{@nombre} #{@mascota}"
 #     # end
 # end
+
 class Mascota
     attr_accessor :nombre
     attr_accessor :size 
@@ -24,7 +25,3 @@ class Mascota
     end
 end
 
-        # Nombre Cliente: #{@nombre_cliente} \t 
-        # Fecha de registro: #{@fecha} \t 
-        # Rut: #{@rut} \t 
-        # Domicilio: #{@domicilio} \t

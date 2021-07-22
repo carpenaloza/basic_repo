@@ -8,7 +8,7 @@
 # si la vida es par / 2
 # si es impar -1
 
-require_relative "juego"
+require_relative 'juego'
 
 juego_nuevo = Juego.new
 juego_nuevo.simular

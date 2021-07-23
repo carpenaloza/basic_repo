@@ -1,5 +1,5 @@
-require 'faker'
-require 'juego'
+require_relative 'faker'
+require_relative 'juego'
 
 class Jugador
     @nombre_jugador

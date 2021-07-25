@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.titulo {color: rgb(255, 255, 255); }
+
+.navegacion {background-color: darkorchid; 
+    text-align: center;
+}
+
+.parrafo {
+    color: blue;
+}
+
+.color1{
+background-color: coral;
+}
+
+.color2{
+    background-color: rgb(255, 80, 217);
+}
+
+.color3{
+    background-color: rgb(80, 255, 80);
+}
+
+.organizacion_izq{
+
+    width: 68%;
+    height: 400px;
+    display: inline-block;
+
+
+}
+
+.organizacion_der{
+
+    width: 28%;
+    height: 400px;
+    display: inline-block;
+
+}
+
+.contenedor_padre{
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+
+}

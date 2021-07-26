@@ -1,0 +1,3 @@
+class GeneradorTexto
+    
+end

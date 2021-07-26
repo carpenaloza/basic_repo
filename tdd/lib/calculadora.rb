@@ -20,7 +20,10 @@ class Calculadora
     end
 
     def dividir(a,b)
-        c= a / b
+        if b == 0
+            return "No se puede dividir entre 0"
+        end
+        c = a / b
         return c
     end
 end

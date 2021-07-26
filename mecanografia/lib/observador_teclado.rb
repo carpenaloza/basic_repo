@@ -1,10 +1,11 @@
 class ObservadorTeclado
-    
-    def self.validar_con_espacios(guia, letra_nueva)
-        #Segunda Forma
-        #return guia.start_with? cadena_nueva
+    #Segunda Forma
+    def self.validar_con_espacios(guia, cadena_nueva)
+        
+        return guia.start_with? cadena_nueva
 
         #Primera forma
+        #def self.validar_con_espacios(guia, letra_nueva)
         cadena_armada = ""
         cadena_armada += letra_nueva
 

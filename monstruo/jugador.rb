@@ -1,4 +1,4 @@
-require_relative 'faker'
+require 'faker'
 require_relative 'juego'
 
 class Jugador
@@ -11,10 +11,11 @@ class Jugador
 
     def atacar (monstruo)
         monstruo.vida -= self.ataque
-        if @ataque % 2 
-            @vida / 2
-        end
-        puts "#{@nombre_jugador} ataca a #{monstruo.nombre}"
+        return monstruo
+        # if @ataque % 2 
+        #     @vida / 2
+        # end
+        # puts "#{@nombre_jugador} ataca a #{monstruo.nombre}"
     end
 
     def mostrar

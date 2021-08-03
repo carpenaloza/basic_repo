@@ -34,8 +34,8 @@ class GeneradorPalabras
             return Faker::Space.planet.downcase
         end
 
-        def self.generar_lenguaje_programacion
-            return Faker::ProgrammingLanguage.name.downcase
-        end
+        # def self.generar_lenguaje_programacion
+        #     return Faker::ProgrammingLanguage.name.downcase
+        # end
     
 end

@@ -3,9 +3,9 @@ class Ventas
     attr_reader   :ventas           # 
     attr_reader   :total            # la suma total de las ventas diarias
     attr_accessor :promedio        # promedio de ventas diarias
-
+    puts "********** RESUMEN VENTAS 📄✍ **********"
     @ventas_para_normalizar
-    
+    puts "********** RESUMEN VENTAS 📄✍ **********"
     def initialize
 
         @ventas = []

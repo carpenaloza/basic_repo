@@ -1,0 +1,59 @@
+# ## Ejercicio 2 - Sumar solo pares
+
+# Dado un número n, generar números al azar entre el 1 y el 100; sumar todos los pares que vayan saliendo. Al finalizar se debe mostrar todos los números separados por comas y en una línea inferior mostrar solo los pares en forma de operación con el resultado final.
+
+# Ejemplos:
+
+# - Caso 1.
+  
+#   n = 10
+  
+#   => 80, 1,  3,  56,  78,  11,  96,  100,  1, 8
+  
+#   => 80 + 56 +78 +96 +100 +8 = 418
+
+# - Caso 2.
+  
+#   n = -1
+  
+#   => 0
+
+# Generando 10 numeros aleatorios del 1 al 100
+# numeros = 10.times.map { rand(1..100) }
+# sumapares = 0
+
+# print numeros
+
+# puts "==================="
+
+
+
+
+# Salidas de datos
+puts "Ingrese el valor de n"
+n = gets.chomp.to_i
+
+numeros = []
+puts "Ingrese los numeros a sumar"
+for i in 0..n-1
+    numeros.push gets.chomp.to_i
+end
+
+suma = 0
+pares = []
+for n in numeros
+    if n % 2 == 0
+        suma += n
+        pares << n
+    end
+end
+
+for n in numeros
+    print n.to_s + ", "
+end
+puts
+for n in pares
+    print n.to_s + " + "
+end
+
+print " = " + suma.to_s

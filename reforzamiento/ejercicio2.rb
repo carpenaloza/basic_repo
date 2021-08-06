@@ -39,12 +39,16 @@ for i in 0..n-1
 end
 
 suma = 0
+pares = []
 for n in numeros
     if n % 2 == 0
         suma += n
     end
 end
 
-puts numeros.inspect
-puts suma
+texto_numero = numeros.join(", ")
+puts texto_numero
+
+texto_pares = pares.join(" + ") + " = " + suma.to_s
+puts texto_pares
 

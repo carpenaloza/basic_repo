@@ -17,3 +17,35 @@
 //   n = -1
   
 //   => 0
+// n = 10 
+// let n = 10
+// const n = 10 Este no permite que n cambie su valor
+var n_texto = prompt("Ingrese e valor de n")
+var n = parseInt(n_texto)
+
+// var n = 10 Primera forma de hacerlo, esto es asignandole el valor
+
+var numeros = []
+// var numeros = new Array lo mismo de linea 26
+
+for(var i = 0; i < n; i++){
+    numeros.push(Math.floor(Math.random() * (101 -1)) + 1)
+}
+
+var suma = 0
+var pares = new Array
+
+for(var i = 0; i < n; i++){
+    if (numeros[i] % 2 == 0){
+    suma += numeros[i]
+    pares.push(numeros[i])
+    }
+}
+
+var texto_numeros = numeros.join(", ")
+var texto_pares = pares.join(" + ") + " = " + suma.toString()
+
+
+
+console.log(texto_numeros)
+console.log(texto_pares)
